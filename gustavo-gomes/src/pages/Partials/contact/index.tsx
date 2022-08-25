@@ -5,7 +5,7 @@ import {
 
 export default function Contact() {
     return (
-        <Container>
+        <Container id="contact">
             <p>Contact</p>
         </Container>
     )

@@ -5,7 +5,7 @@ import {
 
 export default function Knowledge() {
     return (
-        <Container>
+        <Container id="knowledge">
             <p>Knowledge</p>
         </Container>
     )

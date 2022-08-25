@@ -46,7 +46,7 @@ export const ContentButton = styled.li`
     margin: 30px 25px;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
     background: none;
     border: none;
     cursor: pointer; 
@@ -55,6 +55,8 @@ export const Button = styled.button`
     font-weight: bold;
     color: #fff;
     transition: 0.5s;
+    text-decoration: none;
+
 
     &:hover {
        color: #682ae9;

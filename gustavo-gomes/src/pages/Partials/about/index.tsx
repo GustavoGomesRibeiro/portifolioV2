@@ -5,7 +5,7 @@ import {
 
 export default function About() {
     return (
-        <Container>
+        <Container id="about">
             <p>About</p>
         </Container>
     )

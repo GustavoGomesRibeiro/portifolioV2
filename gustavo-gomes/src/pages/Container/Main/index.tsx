@@ -65,7 +65,7 @@ export default function Main() {
 
                     <AreaSubTitle>
                         <SubTitle>
-                            <Text> Gustavo Gomes</Text>
+                            <Text id='gustavo-gomes'> Gustavo Gomes</Text>
                         </SubTitle>
 
                         <SubTitle>
@@ -75,7 +75,9 @@ export default function Main() {
                 </AreaTitle>
 
                 <AreaButton>
-                    <GitHub href="https://github.com/GustavoGomesRibeiro" target="_blank"> <FaGithub size={20} color="#fff"/> <label>Meu GitHub</label></GitHub>
+                    <GitHub href="https://github.com/GustavoGomesRibeiro" target="_blank"> 
+                        <FaGithub size={20} color="#fff"/> <label>GitHub</label>
+                    </GitHub>
                 </AreaButton>
 
             </Container>

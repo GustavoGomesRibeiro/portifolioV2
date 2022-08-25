@@ -5,7 +5,7 @@ import {
 
 export default function Projects() {
     return (
-        <Container>
+        <Container id="projects">
             <p>Projects</p>
         </Container>
     )
