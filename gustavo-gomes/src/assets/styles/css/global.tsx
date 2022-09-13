@@ -1,15 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
-
 export default createGlobalStyle`
     #root {
-        background-color: ${props => props.theme.color.backgroundPrimary};
+        background-color: ${props => props.theme.colors.backgroundPrimary};
         min-height: 100vh;
-    
     }
-    
+
     @media(max-width: 425px) {
         #root{
-        background-color: #0e1212;
+        background-color: ${props => props.theme.colors.backgroundPrimary};
         min-height: 100vh;
         }
     }

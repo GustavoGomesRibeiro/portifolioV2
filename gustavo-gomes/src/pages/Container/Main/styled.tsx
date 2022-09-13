@@ -26,7 +26,7 @@ export const AreaSubTitle = styled.div`
 
 export const Title = styled.p`
 
-    color: #fff;
+    color: ${props => props.theme.fonts.textPrimary};
     font-family: "Roboto Mono", monospace;
     font-size: 64px;
     font-weight: bold;

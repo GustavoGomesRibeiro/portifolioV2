@@ -1,5 +1,6 @@
-import react, {useState, useEffect} from 'react';
+import react, {useState, useEffect, useContext} from 'react';
 import { BsSun, BsMoon } from 'react-icons/all';
+import { ContextApi } from '../../hooks/context';
 
 import {
     Container,
@@ -8,23 +9,24 @@ import {
     Button
 } from './styled';
 
+interface Props {
+    open: boolean;
+    toggleTheme(): void;
+}
 
-const _getItem = JSON.parse(localStorage.getItem('theme')) || "[]";
-// this.currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}');
+const RightNav: React.FC<Props> = ({ open, toggleTheme}) => {
+    const { theme, setTheme } = useContext(ContextApi);
 
-export default function RightNav({open}) {
-    const [ themeLocalStorage, setThemeLocalStorage ] = useState(_getItem);
-    const [ theme, setTheme ] = useState(false);
-
-    useEffect(() => {
-        // localStorage.setItem('theme', JSON.stringify(theme));
-    },[themeLocalStorage])
+    console.log(toggleTheme, 'isEmpty?');
 
     const changeTheme = () => {
-        setTheme(event => !event);
-        localStorage.setItem('theme', JSON.stringify(theme));
-
+        if(!theme){
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
     }
+    
 
     return (
         <Container>
@@ -55,3 +57,5 @@ export default function RightNav({open}) {
         </Container>
     )
 }
+
+export default RightNav;

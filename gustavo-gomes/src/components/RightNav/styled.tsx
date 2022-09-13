@@ -20,9 +20,9 @@ export const AreaButtons = styled.ul`
         width:300px;
         background: #ccc;
         padding-top: 3.5rem;
-        transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'}
+        transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
         transition: transform 0.3s ease-in-out;
-        display: ${props => props.open ? 'flex' : 'none'} 
+        display: ${props => props.open ? 'flex' : 'none'}; 
     }
 
     @media(max-width: 768px) {
@@ -53,7 +53,7 @@ export const Button = styled.a`
     font-family: "Roboto Mono", monospace;
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: ${props => props.theme.fonts.textPrimary};
     transition: 0.5s;
     text-decoration: none;
 

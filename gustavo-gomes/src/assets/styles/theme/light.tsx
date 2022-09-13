@@ -1,12 +1,17 @@
 export default {
     title: 'light',
     
-    color: {
-        primary: '#fff',
-        secundary: '#0e1212',
-        backgroundPrimary: '#0e1212',
-        backgroundSecundary: '#fff',
-        textColor: '#fff',
+    colors: {
+        primary: '#0e1212',
+        secundary: '#fff',
+        // backgroundPrimary: '#EAEBED',
+        // backgroundPrimary: '#B1B5C8',
+        backgroundPrimary: '#C4B7CB',
+        // backgroundPrimary: '#BBC7CE',
+        backgroundSecundary: '#0e1212',
     },
-    fonts: {},
+    fonts: {
+        textPrimary: '#000',
+        // label: ''
+    },
 };
