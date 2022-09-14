@@ -36,9 +36,9 @@ export const AreaButtons = styled.ul`
         width:300px;
         background: #1c1c1c;
         padding-top: 3.5rem;
-        transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'}
+        transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
         transition: transform 0.3s ease-in-out;
-        display: ${props => props.open ? 'flex' : 'none'} 
+        display: ${props => props.open ? 'flex' : 'none'} ;
     }
 `;
 
@@ -59,6 +59,6 @@ export const Button = styled.a`
 
 
     &:hover {
-       color: #682ae9;
+       color: ${props => props.theme.hover.textHover};
     }
 `;

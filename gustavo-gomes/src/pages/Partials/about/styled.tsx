@@ -5,33 +5,31 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-    p {
-        color: #fff;
-    } 
 `;
 
 export const AreaContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0px 50px; */
 `;
 
 export const Img = styled.div`
-    /* background-color: red;
-    width: 100px;
-    height: 100px; */
+    margin: 0px 50px;
+
 `;
 
 export const AboutMe = styled.div`
-    /* background-color: blue; */
-    /* width: 100px;
-    height: 100px; */
-
+    flex-direction: column;
+    display: flex;
+    margin: 0px 50px;
 `;
 
-export const Title = styled.div`
+export const Title = styled.p`
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    color: ${props => props.theme.fonts.title};
+    padding: 20px 0px;
 `;
 
 export const Description = styled.p`
@@ -46,6 +44,7 @@ export const AreaButton = styled.div`
 `;
 
 export const Button = styled.a`
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;

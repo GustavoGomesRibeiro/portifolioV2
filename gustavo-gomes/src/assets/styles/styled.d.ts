@@ -12,6 +12,11 @@ declare module 'styled-components' {
         },
         fonts: {
             textPrimary: string,
+            title: string,
+            label: string,
         },
+        hover: {
+            textHover: string,
+        }
     }
 }

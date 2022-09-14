@@ -11,13 +11,11 @@ import {
 
 interface Props {
     open: boolean;
-    toggleTheme(): void;
 }
 
-const RightNav: React.FC<Props> = ({ open, toggleTheme}) => {
+const RightNav: React.FC<Props> = ({ open}) => {
     const { theme, setTheme } = useContext(ContextApi);
 
-    console.log(toggleTheme, 'isEmpty?');
 
     const changeTheme = () => {
         if(!theme){

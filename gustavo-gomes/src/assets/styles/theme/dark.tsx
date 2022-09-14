@@ -9,5 +9,10 @@ export default {
     },
     fonts: {
         textPrimary: '#fff',
+        title: '#682ae9',
+        label: '#682ae9',
     },
+    hover: {
+        textHover: '#682ae9',
+    }
 };

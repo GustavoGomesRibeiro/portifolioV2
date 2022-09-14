@@ -52,7 +52,7 @@ export const Logo = styled.div`
         font-family: monospace;
         font-weight: bold;
         font-size: 30px;
-        color: #682ae9;
+        color: ${props => props.theme.fonts.label};
     }
 
     @media(max-width: 425px) {
@@ -76,6 +76,6 @@ export const Button = styled.button`
     transition: 0.5s;
 
     &:hover {
-       color: #682ae9;
+       color: ${props => props.theme.hover.textHover};
     }
 `;

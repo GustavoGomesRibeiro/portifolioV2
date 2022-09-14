@@ -32,7 +32,7 @@ export const Title = styled.p`
     font-weight: bold;
 
     label {
-        color: #682ae9;
+        color: ${props => props.theme.fonts.label};
     }
 
     @media(max-width: 425px) {
@@ -43,7 +43,7 @@ export const Title = styled.p`
 export const SubTitle = styled.div``;
 
 export const Text = styled.p`
-    color: #682ae9;
+    color: ${props => props.theme.fonts.label};
     font-family: "Roboto Mono", monospace;
     font-size: 26px;
 `;
