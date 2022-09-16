@@ -34,6 +34,10 @@ const RightNav: React.FC<Props> = ({ open}) => {
              </ContentButton>
 
              <ContentButton>
+                 <Button href="#experience">.work()</Button>
+             </ContentButton>
+
+             <ContentButton>
                  <Button href="#knowledge">.knowledge()</Button>
              </ContentButton>
 

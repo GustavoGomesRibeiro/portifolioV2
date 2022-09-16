@@ -15,6 +15,7 @@ import {
 } from './styled'
 
 import About from '../../Partials/about/index';
+import Experience from '../../Partials/experience/index';
 import Knowledge from '../../Partials/knowledge/index';
 import Projects from '../../Partials/projects/index';
 import Contact from '../../Partials/contact/index';
@@ -82,6 +83,7 @@ export default function Main() {
 
             </Container>
             <About/>
+            <Experience/>
             <Knowledge/>
             <Projects/>
             <Contact/>

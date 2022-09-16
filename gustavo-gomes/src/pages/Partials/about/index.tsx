@@ -6,22 +6,24 @@ import {
     AreaContent,
     Img,
     AboutMe,
+    AreaTitle,
+    Bar,
     Title,
     Description,
     AreaButton,
     Button,
-    Text
+    Text,
 } from './styled';
 
 export default function About() {
     return (
         <Container id="about">
             <AreaContent>
-                <Img>
-                    <img src={snap} alt="about me"/>
-                </Img>
                 <AboutMe>
-                    <Title>About Me</Title>
+                    <AreaTitle>
+                        <Title>About Me</Title>
+                        <Bar/>
+                    </AreaTitle>
                     <Description>
                         Meu nome é Gustavo Ribeiro Gomes, tenho 23 anos, moro em Osasco - São Paulo, Atuo na área de desenvolvimento cerca de 2 anos. Atualmente, estou como Desenvolvedor Full Stack, na Empresa NZN, trabalhando diretamente com um dos maiores sites de tecnologia o Tecmundo. Para mais detalhes do perfil segue o meu LinkedIn.
                     </Description>
@@ -32,6 +34,9 @@ export default function About() {
                         </Button>
                     </AreaButton>
                 </AboutMe>
+                <Img>
+                    <img src={snap} alt="about me"/>
+                </Img>
             </AreaContent>
         </Container>
     )

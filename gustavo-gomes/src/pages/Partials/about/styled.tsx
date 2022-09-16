@@ -16,12 +16,16 @@ export const AreaContent = styled.div`
 export const Img = styled.div`
     margin: 0px 50px;
 
+    img {
+        margin-top: 50px;
+    }
 `;
 
 export const AboutMe = styled.div`
     flex-direction: column;
     display: flex;
     margin: 0px 50px;
+    width: 600px;
 `;
 
 export const Title = styled.p`
@@ -40,7 +44,7 @@ export const Description = styled.p`
 `;
 
 export const AreaButton = styled.div`
-    margin-top: 100px;
+    margin-top: 50px;
 `;
 
 export const Button = styled.a`
@@ -62,4 +66,17 @@ export const Text = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
+`;
+
+export const AreaTitle = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+`;
+
+export const Bar = styled.div`
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background: #682ae9;
 `;
