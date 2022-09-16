@@ -70,11 +70,60 @@ export const AreaButton = styled.div`
     button:active, button:focus{
         border-left: 2px solid #682ae9;
         background: #1d1e1e;
+        transition: 1s;
     }
 `;
 
 export const Descriptions = styled.div`
-    width: 100px;   
-    height: 100px;  
-    background: red;
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+
+    h3{
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    p{
+        font-size: 16px;
+        font-family: monospace;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    div {
+        width: 600px;
+        margin-top: 10px;
+    }
+
+    ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+
+    li{
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        color: #747474;
+        font-size: 16px;
+        text-align: left;
+        font-family: monospace;
+        transition: 0.5s;
+    }
+
+    li:hover{
+        color: #fff;
+        cursor: pointer;
+    }
+
+    li::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: red;
+    } 
 `;

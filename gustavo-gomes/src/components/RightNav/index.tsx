@@ -13,7 +13,7 @@ interface Props {
     open: boolean;
 }
 
-const RightNav: React.FC<Props> = ({ open}) => {
+const RightNav: React.FC<Props> = ({ open }) => {
     const { theme, setTheme } = useContext(ContextApi);
 
 
@@ -34,7 +34,7 @@ const RightNav: React.FC<Props> = ({ open}) => {
              </ContentButton>
 
              <ContentButton>
-                 <Button href="#experience">.work()</Button>
+                 <Button href="#experience">.experience()</Button>
              </ContentButton>
 
              <ContentButton>
