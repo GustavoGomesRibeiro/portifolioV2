@@ -6,7 +6,6 @@ export const Container = styled.div`
     align-items: center;
     height: 100vh;
 
-    p {
-        color: #000;
-    } 
 `;
+
+export const AreaContent = styled.div``;

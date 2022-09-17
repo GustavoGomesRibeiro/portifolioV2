@@ -1,4 +1,8 @@
 import react from 'react';
+
+import Titles from '../../../components/Title';
+
+
 import {
     Container
 } from './styled';
@@ -6,7 +10,7 @@ import {
 export default function Contact() {
     return (
         <Container id="contact">
-            <p>Contact</p>
+            <Titles title="Contact"/>
         </Container>
     )
 }

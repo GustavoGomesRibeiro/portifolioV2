@@ -1,12 +1,17 @@
 import react from 'react';
+import Titles from '../../../components/Title';
+
 import {
-    Container
+    Container,
+    AreaContent
 } from './styled';
 
 export default function Knowledge() {
     return (
         <Container id="knowledge">
-            <p>Knowledge</p>
+            <AreaContent>
+                <Titles title="Knowledge"/>
+            </AreaContent>
         </Container>
     )
 }

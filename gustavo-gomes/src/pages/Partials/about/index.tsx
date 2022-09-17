@@ -1,14 +1,13 @@
 import react from 'react';
 import snap from '../../../assets/styles/imgs/Snap.png';
 
+import Titles from '../../../components/Title';
+
 import {
     Container,
     AreaContent,
     Img,
     AboutMe,
-    AreaTitle,
-    Bar,
-    Title,
     Description,
     AreaButton,
     Button,
@@ -20,10 +19,7 @@ export default function About() {
         <Container id="about">
             <AreaContent>
                 <AboutMe>
-                    <AreaTitle>
-                        <Title>About Me</Title>
-                        <Bar/>
-                    </AreaTitle>
+                    <Titles title='About'/>
                     <Description>
                         Meu nome é Gustavo Ribeiro Gomes, tenho 23 anos, moro em Osasco - São Paulo, Atuo na área de desenvolvimento cerca de 2 anos. Atualmente, estou como Desenvolvedor Full Stack, na Empresa NZN, trabalhando diretamente com um dos maiores sites de tecnologia o Tecmundo. Para mais detalhes do perfil segue o meu LinkedIn.
                     </Description>

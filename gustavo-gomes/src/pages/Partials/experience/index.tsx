@@ -1,11 +1,11 @@
 import react, { useState } from 'react';
+
+import Titles from '../../../components/Title';
+
 import {
     Container,
     AreaContent,
     WorkExperience,
-    AreaTitle,
-    Title,
-    Bar,
     AreaButton,
     Descriptions
 } from './styled';
@@ -32,10 +32,7 @@ export default function Experience() {
         <Container id="experience">
             <AreaContent>
                 <WorkExperience>
-                    <AreaTitle>
-                        <Title>Experience</Title>
-                        <Bar/>
-                    </AreaTitle>
+                    <Titles title='Experience'/>
                 </WorkExperience>
 
                 <AreaButton>

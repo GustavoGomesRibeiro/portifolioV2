@@ -28,14 +28,6 @@ export const AboutMe = styled.div`
     width: 600px;
 `;
 
-export const Title = styled.p`
-    font-size: 30px;
-    font-family: monospace;
-    font-weight: bold;
-    color: ${props => props.theme.fonts.title};
-    padding: 20px 0px;
-`;
-
 export const Description = styled.p`
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -66,17 +58,4 @@ export const Text = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
-`;
-
-export const AreaTitle = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-`;
-
-export const Bar = styled.div`
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background: #682ae9;
 `;
