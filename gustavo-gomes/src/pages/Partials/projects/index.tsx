@@ -1,7 +1,9 @@
 import react from 'react';
-import { MdOutlineFolder, FiGithub } from 'react-icons/all';
-import Titles from '../../../components/Title';
 
+import Titles from '../../../components/Title';
+import experiences from '../../../mock/experience';
+
+import { MdOutlineFolder, FiGithub } from 'react-icons/all';
 import {
     Container,
     AreaContent,
@@ -11,7 +13,22 @@ import {
 
 } from './styled';
 
+
+interface Experience {
+    id: number;
+    title: string;
+    description: string;
+    tech: [
+        {
+            name: string
+        }
+    ];
+    link: string;
+
+}
+
 export default function Projects() {
+
     return (
         <Container id="projects">
             <AreaContent>
@@ -19,90 +36,34 @@ export default function Projects() {
                     <Titles title="Projects"/>
                 </AreaTitle>
                 <AreaProjects>
-                    <Project>
-                        <div className='main'>
-                            <div className='header'>
-                                <MdOutlineFolder size={40} color="#747474"/>
-                                <a href="https://github.com/GustavoGomesRibeiro"><FiGithub size={20} /></a>
-                            </div>
+                    {experiences.map(experience => {
+                        return (
+                            <Project key={experience.id}>
+                                <div className='main'>
+                                    <div className='header'>
+                                        <MdOutlineFolder size={40} color="#fff"/>
+                                        <a href={experience.link}><FiGithub size={20} /></a>
+                                    </div>
+        
+                                    <div className='body'>
+                                        <h3>{experience.title}</h3>
+                                        <p>{experience.description}</p>
+                                    </div>
+        
+                                    <div className='footer'>
+                                        <ul>
+                                            {experience.tech.map(t => {
+                                                return (
+                                                    <li key={Math.random()}>{t.name}</li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </Project>
+                        )
+                    })}
 
-                            <div className='body'>
-                                <h3>GeoService</h3>
-                                <p>Aplicação feita para facilitar a identificar oficinas pela geolocalização.</p>
-                            </div>
-
-                            <div className='footer'>
-                                <ul>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Project>
-                    <Project>
-                        <div className='main'>
-                            <div className='header'>
-                                <MdOutlineFolder size={40} color="#747474"/>
-                                <a href="https://github.com/GustavoGomesRibeiro"><FiGithub size={20} /></a>
-                            </div>
-
-                            <div className='body'>
-                                <h3>GeoService</h3>
-                                <p>Aplicação feita para facilitar a identificar oficinas pela geolocalização.</p>
-                            </div>
-
-                            <div className='footer'>
-                                <ul>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Project>
-                    <Project>
-                        <div className='main'>
-                            <div className='header'>
-                                <MdOutlineFolder size={40} color="#747474"/>
-                                <a href="https://github.com/GustavoGomesRibeiro"><FiGithub size={20} /></a>
-                            </div>
-
-                            <div className='body'>
-                                <h3>GeoService</h3>
-                                <p>Aplicação feita para facilitar a identificar oficinas pela geolocalização.</p>
-                            </div>
-
-                            <div className='footer'>
-                                <ul>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Project>
-                    <Project>
-                        <div className='main'>
-                            <div className='header'>
-                                <MdOutlineFolder size={40} color="#747474"/>
-                                <a href="https://github.com/GustavoGomesRibeiro"><FiGithub size={20} /></a>
-                            </div>
-
-                            <div className='body'>
-                                <h3>GeoService</h3>
-                                <p>Aplicação feita para facilitar a identificar oficinas pela geolocalização.</p>
-                            </div>
-
-                            <div className='footer'>
-                                <ul>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                    <li>React Native</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Project>
                 </AreaProjects>
             </AreaContent>    
         </Container>
