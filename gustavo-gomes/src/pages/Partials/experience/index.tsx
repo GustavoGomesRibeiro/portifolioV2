@@ -36,7 +36,7 @@ export default function Experience() {
                 </WorkExperience>
 
                 <AreaButton>
-                    <ul>
+                    <ul className='button-works'>
                         <li>
                             <button id="nzn" autoFocus onClick={showDescriptionNZN}>NZN</button>
                         </li>

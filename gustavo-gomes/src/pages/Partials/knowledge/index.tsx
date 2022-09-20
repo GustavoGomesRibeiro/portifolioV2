@@ -41,7 +41,7 @@ export default function Knowledge() {
                 </WorkExperience>
 
                 <AreaButton>
-                    <ul>
+                    <ul className="button-knowledge">
                         {knowledges.map(knowledge => {
                             return (
                                 <li key={knowledge.id}>

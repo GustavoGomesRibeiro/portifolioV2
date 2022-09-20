@@ -6,6 +6,9 @@ export const Container = styled.div`
     align-items: center;
     height: 100vh;
 
+    @media (max-width: 425px) {
+        display: block;
+    }
 `;
 
 export const AreaContent = styled.div``;
@@ -15,6 +18,10 @@ export const WorkExperience = styled.div`
     display: flex;
     margin: 0px 50px;
     width: 600px;
+
+    @media(max-width: 425px ) {
+        width: 375px;
+    }
 `;
 
 export const Title = styled.p`
@@ -41,6 +48,13 @@ export const Bar = styled.div`
 export const AreaButton = styled.div`
     display: flex;
 
+    .button-knowledge {
+        @media (max-width: 425px) {
+            display: flex;
+            overflow: auto;
+        }   
+    }
+
     ul{
         list-style: none;
     }
@@ -62,6 +76,13 @@ export const AreaButton = styled.div`
         font-family: monospace;
         font-weight: bold;
         color: #fff;
+
+        @media (max-width: 425px ) {
+            border-left: none;
+            border-top: none;
+            border-bottom: 2px solid #233554;
+            border-right: none;            
+        }
     }
 
     button:hover{
@@ -72,6 +93,12 @@ export const AreaButton = styled.div`
         border-left: 2px solid #682ae9;
         background: #1d1e1e;
         transition: 1s;
+        
+        @media (max-width: 425px ) {
+            border-bottom: 2px solid #682ae9;
+            background: #1d1e1e;
+            transition: 1s;        
+        }
     }
 `;
 

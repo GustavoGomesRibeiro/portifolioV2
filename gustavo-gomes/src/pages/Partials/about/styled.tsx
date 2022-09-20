@@ -1,23 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 100vh;  
 `;
 
 export const AreaContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-`;
 
-export const Img = styled.div`
-    margin: 0px 50px;
-
-    img {
-        margin-top: 50px;
+    @media(max-width: 425px ) {
+        display: flex;
+        flex-direction: column;
     }
 `;
 
@@ -26,6 +20,10 @@ export const AboutMe = styled.div`
     display: flex;
     margin: 0px 50px;
     width: 600px;
+
+    @media(max-width: 425px ) {
+        width: 375px;
+    }
 `;
 
 export const Description = styled.p`
@@ -37,6 +35,12 @@ export const Description = styled.p`
 
 export const AreaButton = styled.div`
     margin-top: 50px;
+
+    @media(max-width: 425px ) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const Button = styled.a`
@@ -58,4 +62,23 @@ export const Text = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
+`;
+
+export const Img = styled.div`
+    margin: 0px 50px;
+
+    @media(max-width: 425px ) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px;
+    }
+
+    img {
+        margin-top: 50px;
+
+        @media(max-width: 425px ) {
+            width: 350px;
+        }
+    }
 `;

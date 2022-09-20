@@ -5,6 +5,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    @media (max-width: 425px) {
+        display: block;
+    }
 `;
 
 
@@ -15,6 +19,10 @@ export const AreaTitle = styled.div`
     display: flex;
     margin: 0px 50px;
     width: 600px;
+
+    @media(max-width: 425px ) {
+        width: 375px;
+    }
 `;
 
 export const AreaProjects = styled.ul`

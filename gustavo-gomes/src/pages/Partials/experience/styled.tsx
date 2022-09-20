@@ -1,19 +1,30 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 `;
 
-export const AreaContent = styled.div``;
+export const AreaContent = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 425px) {
+        display: block;
+    }
+`;
 
 export const WorkExperience = styled.div`
     flex-direction: column;
     display: flex;
     margin: 0px 50px;
     width: 600px;
+
+    @media (max-width: 425px) {
+        width: 400px;
+        margin: 0px 20px;
+    }
 `;
 
 export const Title = styled.p`
@@ -35,18 +46,30 @@ export const Bar = styled.div`
     height: 1px;
     margin-left: 20px;
     background: #682ae9;
+
+    @media (max-width: 425px) {
+        width: 200px;
+    }
 `;
 
 export const AreaButton = styled.div`
     display: flex;
 
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
+
+    .button-works{
+        @media (max-width: 425px) {
+            display: flex;
+        }        
+    }
+
     ul{
         list-style: none;
     }
 
-    li{
-        /* margin: 10px; */
-    }
+    li{}
 
     button{
         color: #fff;
@@ -61,6 +84,13 @@ export const AreaButton = styled.div`
         font-family: monospace;
         font-weight: bold;
         color: #fff;
+
+        @media (max-width: 425px ) {
+            border-left: none;
+            border-top: none;
+            border-bottom: 2px solid #233554;
+            border-right: none;            
+        }
     }
 
     button:hover{
@@ -71,6 +101,12 @@ export const AreaButton = styled.div`
         border-left: 2px solid #682ae9;
         background: #1d1e1e;
         transition: 1s;
+
+        @media (max-width: 425px ) {
+            border-bottom: 2px solid #682ae9;
+            background: #1d1e1e;
+            transition: 1s;        
+        }
     }
 `;
 
@@ -84,6 +120,11 @@ export const Descriptions = styled.div`
         font-family: monospace;
         font-weight: bold;
         color: #fff;
+
+        @media (max-width: 425px ) {
+            font-size: 26px;
+            margin-top: 10px;
+        }
     }
 
     p{
@@ -96,6 +137,10 @@ export const Descriptions = styled.div`
     div {
         width: 600px;
         margin-top: 10px;
+
+        @media (max-width: 425px) {
+            width: 400px;
+        }
     }
 
     ul {
