@@ -20,8 +20,12 @@ export const AreaTitle = styled.div`
     margin: 0px 50px;
     width: 600px;
 
-    @media(max-width: 425px ) {
-        width: 375px;
+    @media (max-width: 425px) {
+        width: 400px;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;
 

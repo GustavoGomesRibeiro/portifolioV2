@@ -21,4 +21,8 @@ export const Bar = styled.div`
     height: 1px;
     margin-left: 20px;
     background: #682ae9;
+
+    @media (max-width: 425px) {
+        width: 200px;
+    }
 `;

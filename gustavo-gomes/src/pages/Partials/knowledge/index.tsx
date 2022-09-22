@@ -6,7 +6,7 @@ import knowledges from '../../../mock/knowledge';
 import {
     Container,
     AreaContent,
-    WorkExperience,
+    AreaTitle,
     AreaButton,
     Descriptions
 } from './styled';
@@ -36,9 +36,9 @@ export default function Knowledge() {
     return (
         <Container id="knowledge">
             <AreaContent>
-                <WorkExperience>
+                <AreaTitle>
                     <Titles title="Knowledge"/>
-                </WorkExperience>
+                </AreaTitle>
 
                 <AreaButton>
                     <ul className="button-knowledge">

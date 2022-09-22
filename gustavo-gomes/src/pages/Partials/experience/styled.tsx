@@ -23,32 +23,10 @@ export const WorkExperience = styled.div`
 
     @media (max-width: 425px) {
         width: 400px;
-        margin: 0px 20px;
-    }
-`;
-
-export const Title = styled.p`
-    font-size: 30px;
-    font-family: monospace;
-    font-weight: bold;
-    color: ${props => props.theme.fonts.title};
-    padding: 20px 0px;
-`;
-
-export const AreaTitle = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-`;
-
-export const Bar = styled.div`
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background: #682ae9;
-
-    @media (max-width: 425px) {
-        width: 200px;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -89,7 +67,8 @@ export const AreaButton = styled.div`
             border-left: none;
             border-top: none;
             border-bottom: 2px solid #233554;
-            border-right: none;            
+            border-right: none;     
+            margin-left: 10px;
         }
     }
 
@@ -104,6 +83,7 @@ export const AreaButton = styled.div`
 
         @media (max-width: 425px ) {
             border-bottom: 2px solid #682ae9;
+            border-left: none;
             background: #1d1e1e;
             transition: 1s;        
         }
@@ -139,7 +119,7 @@ export const Descriptions = styled.div`
         margin-top: 10px;
 
         @media (max-width: 425px) {
-            width: 400px;
+            width: 375px;
         }
     }
 

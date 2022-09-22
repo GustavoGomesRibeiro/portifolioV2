@@ -23,6 +23,7 @@ export const AreaButtons = styled.ul`
         transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
         transition: transform 0.3s ease-in-out;
         display: ${props => props.open ? 'flex' : 'none'}; 
+        z-index: 1;
     }
 
     @media(max-width: 768px) {
@@ -39,6 +40,7 @@ export const AreaButtons = styled.ul`
         transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
         transition: transform 0.3s ease-in-out;
         display: ${props => props.open ? 'flex' : 'none'} ;
+        z-index: 1;
     }
 `;
 

@@ -13,40 +13,28 @@ export const Container = styled.div`
 
 export const AreaContent = styled.div``;
 
-export const WorkExperience = styled.div`
+export const AreaTitle = styled.div`
     flex-direction: column;
     display: flex;
     margin: 0px 50px;
     width: 600px;
 
-    @media(max-width: 425px ) {
-        width: 375px;
+    @media (max-width: 425px) {
+        width: 400px;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
-`;
-
-export const Title = styled.p`
-    font-size: 30px;
-    font-family: monospace;
-    font-weight: bold;
-    color: ${props => props.theme.fonts.title};
-    padding: 20px 0px;
-`;
-
-export const AreaTitle = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-`;
-
-export const Bar = styled.div`
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background: #682ae9;
 `;
 
 export const AreaButton = styled.div`
     display: flex;
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
 
     .button-knowledge {
         @media (max-width: 425px) {
@@ -59,9 +47,7 @@ export const AreaButton = styled.div`
         list-style: none;
     }
 
-    li{
-        /* margin: 10px; */
-    }
+    li{}
 
     button{
         color: #fff;
@@ -81,7 +67,8 @@ export const AreaButton = styled.div`
             border-left: none;
             border-top: none;
             border-bottom: 2px solid #233554;
-            border-right: none;            
+            border-right: none; 
+            margin-left: 10px;
         }
     }
 
@@ -96,6 +83,7 @@ export const AreaButton = styled.div`
         
         @media (max-width: 425px ) {
             border-bottom: 2px solid #682ae9;
+            border-left: none;
             background: #1d1e1e;
             transition: 1s;        
         }
@@ -112,6 +100,11 @@ export const Descriptions = styled.div`
         font-family: monospace;
         font-weight: bold;
         color: #fff;
+
+        @media (max-width: 425px ) {
+            font-size: 26px;
+            margin-top: 10px;
+        }
     }
 
     p{
@@ -124,6 +117,10 @@ export const Descriptions = styled.div`
     div {
         width: 600px;
         margin-top: 10px;
+
+        @media (max-width: 425px) {
+            width: 375px;
+        }
     }
 
     ul {
