@@ -1,4 +1,4 @@
-import react, {useState, useEffect, useContext} from 'react';
+import react, {useContext} from 'react';
 import { BsSun, BsMoon } from 'react-icons/all';
 import { ContextApi } from '../../hooks/context';
 
@@ -45,9 +45,9 @@ const RightNav: React.FC<Props> = ({ open }) => {
                  <Button href="#projects">.projects()</Button>
              </ContentButton>
 
-             <ContentButton>
+             {/* <ContentButton>
                  <Button href="#contact">.contact()</Button>
-             </ContentButton>
+             </ContentButton> */}
 
              <ContentButton>
                 <Button onClick={changeTheme}>

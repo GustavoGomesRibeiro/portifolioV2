@@ -25,91 +25,41 @@ const knowledge = [
         name:'Node.js',
         descriptions: [
             {
-                desc_1: '',
-                desc_2: '',
-                desc_3: '',
+                desc_1: 'Node.js, express, querybuilder(typeorm, knex)',
             }
         ]
     },
     {
-        id: 'c#',
-        name:'C#',
+        id: 'others',
+        name:'Outras stacks',
         descriptions: [
             {
-                desc_1: '',
-                desc_2: '',
-                desc_3: '',
+                desc_1: 'C#',
+                desc_2: 'Java',
+                desc_3: 'Angular',
             }
         ]
     },
     {
-        id: 'java',
-        name:'Java',
+        id: 'service-cloud',
+        name:'Cloud',
         descriptions: [
             {
-                desc_1: '',
-                desc_2: '',
-                desc_3: '',
+                desc_1: 'AWS: Ec2, S3, Lambdas, Route53, Cloud Front',
+                desc_2: 'Azure: Aplication Service',
             }
         ]
     },
     {
-        id: 'angular',
-        name:'Angular',
+        id: 'testes',
+        name:'Testes',
         descriptions: [
             {
-                desc_1: '',
-                desc_2: '',
-                desc_3: '',
+                desc_1: 'e2e com Cypress, Detox para Mobile(React Native)',
+                desc_2: 'Testes unitários e de integração, usando Jest',
             }
         ]
-    },
-    {
-        id: 'aws',
-        name:'AWS',
-        descriptions: [
-            {
-                desc_1: 'Ec2',
-                desc_2: 'S3',
-                desc_3: 'Lambdas',
-                desc_4: 'Route53',
-                desc_5: 'Cloud Front',
-            }
-        ]
-    },
-    {
-        id: 'azure',
-        name:'Azure',
-        descriptions: [
-            {
-                desc_1: '',
-                desc_2: '',
-                desc_3: '',
-            }
-        ]
-    },
-    {
-        id: 'teste',
-        name:'Teste unitário/e2e',
-        descriptions: [
-            {
-                desc_1: '',
-                desc_2: '',
-                desc_3: '',
-            }
-        ]
-    },
-    {
-        id: 'scrum',
-        name:'Scrum',
-        descriptions: [
-            {
-                desc_1: '',
-                desc_2: '',
-                desc_3: '',
-            }
-        ]
-    },
+    }
 ]
 
 export default knowledge;

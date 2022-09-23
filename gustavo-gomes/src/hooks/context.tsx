@@ -1,4 +1,6 @@
 import React, { createContext, ReactNode, useState } from 'react';
+import persistedState from '../utils/persistedState';
+
 import { ThemeProvider } from 'styled-components';
 import light from '../assets/styles/theme/light';
 import dark from '../assets/styles/theme/dark';
@@ -18,7 +20,7 @@ const ContextApi = createContext({
 
 function UseContextApi({children}: IContext) {
 
-    const [theme, setTheme] = useState<boolean>(false);
+    const [theme, setTheme] = persistedState('theme', false);
 
     const toggleTheme = () => {
         setTheme(event => !event);

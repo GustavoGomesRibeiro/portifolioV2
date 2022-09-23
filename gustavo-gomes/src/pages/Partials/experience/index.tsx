@@ -38,7 +38,7 @@ export default function Experience() {
                 <AreaButton>
                     <ul className='button-works'>
                         <li>
-                            <button id="nzn" autoFocus onClick={showDescriptionNZN}>NZN</button>
+                            <button id="nzn" onClick={showDescriptionNZN}>NZN</button>
                         </li>
                         <li>
                             <button id="starpay" onClick={showDescriptionStarpay}>Starpay</button>

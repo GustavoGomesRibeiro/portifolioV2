@@ -27,7 +27,7 @@ export const AboutMe = styled.div`
 `;
 
 export const Description = styled.p`
-    color: rgb(255, 255, 255);
+    color: ${props => props.theme.fonts.textPrimary};
     font-size: 20px;
     text-align: left;
     font-family: monospace;

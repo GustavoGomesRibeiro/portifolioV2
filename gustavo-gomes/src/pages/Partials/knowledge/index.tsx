@@ -45,7 +45,7 @@ export default function Knowledge() {
                         {knowledges.map(knowledge => {
                             return (
                                 <li key={knowledge.id}>
-                                    <button id={knowledge.id} autoFocus onClick={() => showDescription(knowledge.id)}>{knowledge.name}</button>
+                                    <button id={knowledge.id} onClick={() => showDescription(knowledge.id)}>{knowledge.name}</button>
                                 </li>
                             )
                         })}
@@ -63,8 +63,6 @@ export default function Knowledge() {
                                                     <li>{description?.desc_1}</li>
                                                     <li>{description?.desc_2}</li>
                                                     <li>{description?.desc_3}</li>
-                                                    <li>{description?.desc_4}</li>
-                                                    <li>{description?.desc_5}</li>
                                                 </div>
                                             )
                                         })}

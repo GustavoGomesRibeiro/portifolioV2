@@ -1,5 +1,6 @@
-import react, { useState, useEffect} from 'react';
-import { FaGithub, FaArrowCircleUp } from 'react-icons/fa';
+import react, { useState, useEffect, useContext} from 'react';
+import { FaGithub, FaArrowCircleUp, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { ContextApi } from '../../../hooks/context';
 
 import {
     Container,
@@ -11,7 +12,10 @@ import {
     CurrentJob,
     AreaButton,
     GitHub,
-    Icon
+    Icon,
+    ExternalLinks,
+    Content,
+    Bar
 } from './styled'
 
 import About from '../../Partials/about/index';
@@ -21,7 +25,10 @@ import Projects from '../../Partials/projects/index';
 import Contact from '../../Partials/contact/index';
 
 export default function Main() {
+    const { theme } = useContext(ContextApi);
+
     const [showScroll, setShowScroll] = useState(false);
+
 
     useEffect(() => {
         const getIdFrontEnd = document.getElementById('front-end');
@@ -86,14 +93,25 @@ export default function Main() {
             <Experience/>
             <Knowledge/>
             <Projects/>
-            <Contact/>
+            {/* <Contact/> */}
             <Icon>
                 <FaArrowCircleUp
                     className="scrollTop"
                     onClick={scrollTop}
-                    style={{ height: 40, color: '#fff', display: showScroll ? 'flex' : 'none' }}
+                    style={ theme ? { height: 40, color: '#000', display: showScroll ? 'flex' : 'none' } : { height: 40, color: '#fff', display: showScroll ? 'flex' : 'none' } }
                 />
             </Icon>
+
+            <ExternalLinks>
+                <Content>
+                    <ul>
+                        <li><a href="https://github.com/GustavoGomesRibeiro" target="_blank"><FaGithub size={20} color={theme ? '#000' : '#fff'}/></a></li>
+                        <li><a href="https://www.linkedin.com/in/gustavoribeirogomes/" target="_blank"><FaLinkedin size={20} color={theme ? '#000' : '#fff'}/></a></li>
+                        <li><a href="https://www.instagram.com/_guhsje/" target="_blank"><FaInstagram size={20} color={theme ? '#000' : '#fff'}/></a></li>
+                        <Bar theme={theme}/>
+                    </ul>
+                </Content>
+            </ExternalLinks>
         </>
     )
 }
