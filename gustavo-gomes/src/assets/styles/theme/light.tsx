@@ -13,6 +13,7 @@ export default {
     },
     fonts: {
         textPrimary: '#000',
+        title: '#000',
         label: '#fff',
     },
     hover: {

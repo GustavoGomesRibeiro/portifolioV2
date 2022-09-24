@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
+type open = {
+    open: boolean;
+  };
+
 export const Container = styled.div``;
 
-export const AreaButtons = styled.ul`
+export const AreaButtons = styled.ul<open>`
     display: flex;
     flex-direction: row;
     justify-content: space-between;

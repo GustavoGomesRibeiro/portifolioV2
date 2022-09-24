@@ -13,7 +13,6 @@ export default function Burger() {
 
     const handleClick = () => {
         setOpen( event => !event)
-        // console.log(open, 'burger')
     }
 
     return (

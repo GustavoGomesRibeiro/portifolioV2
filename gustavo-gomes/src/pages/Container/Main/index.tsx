@@ -36,11 +36,11 @@ export default function Main() {
         const typeWriter = (id: HTMLElement | null) => {
             const splitText = id?.innerHTML.split('');
 
-            id.innerHTML = '';
+            id!.innerHTML = '';
 
-            splitText.forEach((letters, index) => {
+            splitText!.forEach((letters, index) => {
                 setTimeout( function() {
-                    id.innerHTML += letters
+                    id!.innerHTML += letters
                 }, 75 * index) 
             });
         }
@@ -108,7 +108,7 @@ export default function Main() {
                         <li><a href="https://github.com/GustavoGomesRibeiro" target="_blank"><FaGithub size={20} color={theme ? '#000' : '#fff'}/></a></li>
                         <li><a href="https://www.linkedin.com/in/gustavoribeirogomes/" target="_blank"><FaLinkedin size={20} color={theme ? '#000' : '#fff'}/></a></li>
                         <li><a href="https://www.instagram.com/_guhsje/" target="_blank"><FaInstagram size={20} color={theme ? '#000' : '#fff'}/></a></li>
-                        <Bar theme={theme}/>
+                        <Bar/>
                     </ul>
                 </Content>
             </ExternalLinks>

@@ -16,11 +16,9 @@ interface Knowledge {
     name: string;
     descriptions: [
         {
-            desc_1?: string,
-            desc_2?: string,
-            desc_3?: string,
-            desc_4?: string,
-            desc_5?: string,
+            desc_1: string,
+            desc_2: string,
+            desc_3: string,
         }
     ];
 }
@@ -28,8 +26,9 @@ interface Knowledge {
 export default function Knowledge() {
     const [ filteredKnowledge, setFilteredKnowledge ] = useState<Knowledge[]>([]);
 
-    const showDescription = (id) => {
+    const showDescription = (id: string) => {
         const knowledgeId = knowledges.filter( i => i.id === id );
+        // @ts-ignore: Unreachable code error
         setFilteredKnowledge(knowledgeId);
     }
 

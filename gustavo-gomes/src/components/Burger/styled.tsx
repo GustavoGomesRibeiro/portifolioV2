@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+
+type open = {
+    open: boolean;
+  };
+
+
+export const Container = styled.div<open>`
     width: 2rem;
     height: 2rem;
     position: fixed;

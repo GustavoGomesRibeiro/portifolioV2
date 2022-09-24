@@ -6,7 +6,7 @@ import {
     Bar
 } from './styled';
 
-export default function Titles({ title }) {
+export default function Titles({ title } : {title: string}) {
     return (
         <Container>
             <AreaTitle>

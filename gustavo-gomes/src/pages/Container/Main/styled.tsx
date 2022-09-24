@@ -177,9 +177,11 @@ export const Content = styled.div`
 export const Bar = styled.div`
   height: 100px;
   width: 1px;
-  background-color: ${props => props.theme === true ? '#000' : '#fff'};
-
+  background-color: #fff;
+  
   @media (max-width: 425px) {
     display: none;
   }
-`;
+  `;
+  
+  // background-color: ${props => props.theme === true ? '#000' : '#fff'};

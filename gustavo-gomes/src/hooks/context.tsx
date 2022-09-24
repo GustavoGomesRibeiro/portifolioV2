@@ -23,7 +23,7 @@ function UseContextApi({children}: IContext) {
     const [theme, setTheme] = persistedState('theme', false);
 
     const toggleTheme = () => {
-        setTheme(event => !event);
+        setTheme((event: any) => !event);
     }
 
     
