@@ -9,7 +9,6 @@ export default function Experience() {
   const [value, setValue] = useState(1);
 
   const showDescription = (id: number) => {
-    console.log(id, "click");
     setValue(id);
     setCheck((event) => !event);
   };
@@ -22,7 +21,10 @@ export default function Experience() {
           return (
             <S.ContentExperience key={i.id}>
               <S.ContainerJobs>
-                <S.Jobs onClick={() => showDescription(i.id)}>
+                <S.Jobs
+                  onClick={() => showDescription(i.id)}
+                  active={i.id === value}
+                >
                   {i.company}
                 </S.Jobs>
               </S.ContainerJobs>

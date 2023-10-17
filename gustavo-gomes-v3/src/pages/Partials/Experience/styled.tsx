@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export interface Props {
+  active: boolean;
+}
+
 export const Section = styled.section`
   display: flex;
   justify-content: center;
@@ -28,18 +32,20 @@ export const ContentExperience = styled.ul`
 
 export const ContainerJobs = styled.li``;
 
-export const Jobs = styled.button`
-  border-left: 2px solid rgb(35, 53, 84);
+export const Jobs = styled.button<Props>`
+  border-left: ${(props) =>
+    props.active ? "2px solid #986dff" : "2px solid rgb(35, 53, 84)"};
   border-top: none;
   border-bottom: none;
   border-right: none;
   width: 250px;
   height: 180px;
   background-color: transparent;
-  font-size: 15px;
+  font-size: 24px;
   font-family: monospace;
   font-weight: bold;
   color: rgb(255, 255, 255);
+  text-shadow: 2px 3px 0px #898999;
 `;
 
 export const DescriptionJobs = styled.div`

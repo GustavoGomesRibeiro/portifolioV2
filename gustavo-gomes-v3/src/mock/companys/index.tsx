@@ -20,7 +20,7 @@ const companys = [
     company: "Caixa Vida e Previdência",
     ocuppation: "Full-Stack Developer Pleno",
     description:
-      "Desenvolvimento de novos projetos, migraçao do produto legado para React.Js. Tecnologias utilizadas: React.js, Testes unitários, React Hook, Form, TypeScript ",
+      "Desenvolvimento de novos projetos, migraçao do produto legado para React.Js. Tecnologias utilizadas: React.js, Testes unitários, React Hook, Form, TypeScript.",
     timeline: "Jan 2023 - Present",
   },
 ];

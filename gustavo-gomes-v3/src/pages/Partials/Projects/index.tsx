@@ -1,11 +1,11 @@
 import React from "react";
 
-// import { Container } from './styled';
+import * as S from "./styled";
 
 export default function Porjects() {
   return (
-    <section>
-      <h1 className="text-white">About</h1>
-    </section>
+    <S.Section id="projects">
+      <S.Title>Projetos</S.Title>
+    </S.Section>
   );
 }

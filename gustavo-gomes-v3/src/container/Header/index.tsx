@@ -18,10 +18,10 @@ export default function Header() {
           <a href="#experience">.experience()</a>
         </S.Items>
         <S.Items>
-          <a href="">.projects()</a>
+          <a href="#projects">.projects()</a>
         </S.Items>
         <S.Items>
-          <a href="">.knowledge()</a>
+          <a href="#knowledge">.knowledge()</a>
         </S.Items>
       </S.ItemsMenu>
     </S.Container>
