@@ -13,6 +13,7 @@ export default function Experience() {
     setCheck((event) => !event);
   };
 
+  console.log(check);
   return (
     <S.Section id="experience">
       <S.Container>
