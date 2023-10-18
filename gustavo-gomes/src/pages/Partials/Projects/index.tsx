@@ -5,7 +5,7 @@ import Geo from "@/assets/imgs/geoservice.png";
 import Black from "@/assets/imgs/black.png";
 import * as S from "./styled";
 
-export default function Porjects() {
+export default function Projects() {
   return (
     <S.Section id="projects">
       <S.Title>Projetos</S.Title>

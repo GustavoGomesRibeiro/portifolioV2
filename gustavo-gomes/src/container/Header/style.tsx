@@ -22,7 +22,7 @@ export const Image = styled.img`
   }
 `;
 
-export const Title = styled.text`
+export const Title = styled.h2`
   margin: 0 30px;
   font-family: monospace;
   font-weight: bold;

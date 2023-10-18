@@ -57,7 +57,7 @@ export const Card = styled.div`
 
 export const Content = styled.div`
   background-color: #282541;
-  height: 250px;
+  height: 270px;
   width: 300px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -90,7 +90,7 @@ export const Description = styled.p`
   padding: 10px 0px;
 `;
 
-export const Stack = styled.p`
+export const Stack = styled.div`
   display: flex;
   font-size: 1rem;
   font-weight: 500;

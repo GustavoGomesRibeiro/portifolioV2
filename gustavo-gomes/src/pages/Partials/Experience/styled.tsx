@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export interface Props {
-  active: boolean;
+  active: string;
 }
 
 export const Section = styled.section`
@@ -58,7 +58,9 @@ export const ContainerJobs = styled.li``;
 
 export const Jobs = styled.button<Props>`
   border-left: ${(props) =>
-    props.active ? "2px solid #986dff" : "2px solid rgb(35, 53, 84)"};
+    props.active === "true"
+      ? "2px solid #986dff"
+      : "2px solid rgb(35, 53, 84)"};
   border-top: none;
   border-bottom: none;
   border-right: none;

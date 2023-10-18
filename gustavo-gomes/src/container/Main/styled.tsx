@@ -42,7 +42,7 @@ export const ContainerController = styled.div`
 
 export const Apresentation = styled.div``;
 
-export const Nome = styled.text`
+export const Nome = styled.p`
   color: #fff;
   font-family: "Roboto Mono", monospace;
   font-size: 32px;
@@ -58,7 +58,7 @@ export const Nome = styled.text`
   }
 `;
 
-export const SobreNome = styled.text`
+export const SobreNome = styled.span`
   color: #682ae9;
   font-family: "Roboto Mono", monospace;
   font-size: 32px;
@@ -73,7 +73,7 @@ export const SobreNome = styled.text`
 
 export const SubTitle = styled.div``;
 
-export const GustavoGomes = styled.text`
+export const GustavoGomes = styled.h3`
   color: #682ae9;
   font-family: "Roboto Mono", monospace;
   font-size: 26px;
@@ -81,7 +81,7 @@ export const GustavoGomes = styled.text`
   text-shadow: 2px 3px 0px #e2e2e299;
 `;
 
-export const FrontEnd = styled.text`
+export const FrontEnd = styled.h4`
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   color: #ffff;
@@ -138,7 +138,7 @@ export const Button = styled.button`
   z-index: 1;
 `;
 
-export const Text = styled.text`
+export const Text = styled.p`
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: bold;

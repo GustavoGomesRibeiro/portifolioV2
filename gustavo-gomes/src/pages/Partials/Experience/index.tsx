@@ -5,6 +5,7 @@ import companys from "@/mock/companys/index";
 import * as S from "./styled";
 
 export default function Experience() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [check, setCheck] = useState(true);
   const [value, setValue] = useState(1);
 
@@ -13,7 +14,6 @@ export default function Experience() {
     setCheck((event) => !event);
   };
 
-  console.log(check);
   return (
     <S.Section id="experience">
       <S.Container>
@@ -24,7 +24,7 @@ export default function Experience() {
               <S.ContainerJobs>
                 <S.Jobs
                   onClick={() => showDescription(i.id)}
-                  active={i.id === value}
+                  active={i.id === value ? "true" : "false"}
                 >
                   {i.company}
                 </S.Jobs>
