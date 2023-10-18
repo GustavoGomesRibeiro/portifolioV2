@@ -1,4 +1,3 @@
-import React from "react";
 import {
   SiStyledcomponents,
   SiTailwindcss,
@@ -24,6 +23,7 @@ export default function Knowledge() {
           <S.Title>Tech Stack</S.Title>
           <S.SubTitle>Techonologies I've been working with recently</S.SubTitle>
         </S.ContainerTitle>
+
         <S.ContainerStacks>
           <S.Stack>
             <SiJavascript size={65} color="#F5DE19" />

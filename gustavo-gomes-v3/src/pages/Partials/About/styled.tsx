@@ -18,6 +18,19 @@ export const ContentAboutMe = styled.div`
   border: 1px solid #ccc;
   padding: 20px;
   width: 100%;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    flex-direction: row;
+  }
 `;
 
 export const AboutMe = styled.div`

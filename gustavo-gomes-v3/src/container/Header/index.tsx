@@ -1,6 +1,7 @@
 import saturn from "@/assets/imgs/saturn.png";
 
 import * as S from "./style";
+import Burger from "@/components/Burger";
 
 export default function Header() {
   return (
@@ -10,20 +11,7 @@ export default function Header() {
         <S.Title>Gustavo.Gomes()</S.Title>
       </S.Logo>
 
-      <S.ItemsMenu>
-        <S.Items>
-          <a href="#about">.about()</a>
-        </S.Items>
-        <S.Items>
-          <a href="#experience">.experience()</a>
-        </S.Items>
-        <S.Items>
-          <a href="#projects">.projects()</a>
-        </S.Items>
-        <S.Items>
-          <a href="#knowledge">.knowledge()</a>
-        </S.Items>
-      </S.ItemsMenu>
+      <Burger />
     </S.Container>
   );
 }

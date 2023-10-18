@@ -35,7 +35,7 @@ export default function Main() {
             </S.Nome>
 
             <S.SubTitle>
-              <S.GustavoGomes> Gustavo Gomes</S.GustavoGomes>
+              <S.GustavoGomes>Gustavo Gomes</S.GustavoGomes>
             </S.SubTitle>
 
             <S.SubTitle>
@@ -47,10 +47,12 @@ export default function Main() {
       </S.ContainerApresentation>
 
       <S.ContainerButton>
-        <S.Button>
-          <FaGithub size={20} color="#fff" />
-          <S.Text>GitHub</S.Text>
-        </S.Button>
+        <a href="https://github.com/GustavoGomesRibeiro" target="_blank">
+          <S.Button>
+            <FaGithub size={20} color="#fff" />
+            <S.Text>GitHub</S.Text>
+          </S.Button>
+        </a>
       </S.ContainerButton>
       <Stars />
       <ExternalLinks />

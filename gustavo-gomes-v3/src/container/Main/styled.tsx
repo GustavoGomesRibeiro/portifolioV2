@@ -31,6 +31,13 @@ export const ContainerController = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 `;
 
 export const Apresentation = styled.div``;
@@ -38,16 +45,30 @@ export const Apresentation = styled.div``;
 export const Nome = styled.text`
   color: #fff;
   font-family: "Roboto Mono", monospace;
-  font-size: 64px;
+  font-size: 32px;
   font-weight: bold;
   text-shadow: 2px 3px 0px #898999;
+
+  @media screen and (min-width: 1024px) {
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 3px 0px #898999;
+  }
 `;
 
 export const SobreNome = styled.text`
   color: #682ae9;
   font-family: "Roboto Mono", monospace;
-  font-size: 64px;
+  font-size: 32px;
   font-weight: bold;
+  @media screen and (min-width: 1024px) {
+    color: #682ae9;
+    font-family: "Roboto Mono", monospace;
+    font-size: 64px;
+    font-weight: bold;
+  }
 `;
 
 export const SubTitle = styled.div``;
@@ -78,16 +99,27 @@ export const FrontEnd = styled.text`
 `;
 
 export const Image = styled.img`
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
-  border-radius: 200px;
+  border-radius: 100px;
+  z-index: 1;
+  margin: 40px 0px;
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 200px;
+    z-index: 1;
+  }
 `;
 
 export const ContainerButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 `;
 
 export const Button = styled.button`
@@ -103,6 +135,7 @@ export const Button = styled.button`
   padding: 15px;
   cursor: pointer;
   text-decoration: none;
+  z-index: 1;
 `;
 
 export const Text = styled.text`

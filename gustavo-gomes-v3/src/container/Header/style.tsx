@@ -15,15 +15,28 @@ export const Logo = styled.div`
   margin: 10px;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  height: 50px;
+  @media screen and (min-width: 1024px) {
+    height: 70px;
+  }
+`;
 
 export const Title = styled.text`
   margin: 0 30px;
   font-family: monospace;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   color: #682ae9;
   text-shadow: 2px 3px 0px #898999;
+  @media screen and (min-width: 1024px) {
+    margin: 0 30px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 40px;
+    color: #682ae9;
+    text-shadow: 2px 3px 0px #898999;
+  }
 `;
 
 export const ItemsMenu = styled.ul`
@@ -31,6 +44,7 @@ export const ItemsMenu = styled.ul`
   justify-content: center;
   align-items: center;
   list-style: none;
+  z-index: 1;
 `;
 
 export const Items = styled.li`

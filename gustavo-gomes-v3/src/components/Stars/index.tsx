@@ -2,17 +2,12 @@ import "./style.css";
 
 export default function Stars() {
   return (
-    <div>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div id="space">
+      <div className="stars"></div>
+      <div className="stars"></div>
+      <div className="stars"></div>
+      <div className="stars"></div>
+      <div className="stars"></div>
     </div>
   );
 }

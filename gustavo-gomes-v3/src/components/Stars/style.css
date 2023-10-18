@@ -1,112 +1,88 @@
-span {
+#space,
+.stars {
+  overflow: hidden;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4px;
-  height: 4px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
-    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
-  animation: animate 3s linear infinite;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-span::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 300px;
-  height: 1px;
-  background: linear-gradient(90deg, #fff, transparent);
+
+.stars {
+  background-image: radial-gradient(
+      2px 2px at 20px 30px,
+      #eee,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 15s infinite;
+  opacity: 0;
 }
-@keyframes animate {
+
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 4s;
+}
+
+@keyframes zoom {
   0% {
-    transform: rotate(315deg) translateX(0);
-    opacity: 1;
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
   }
-  70% {
+  85% {
     opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
   }
   100% {
-    transform: rotate(315deg) translateX(-1000px);
     opacity: 0;
+    transform: scale(3.5);
   }
 }
-span:nth-child(1) {
-  top: 0;
-  right: 0;
-  left: initial;
-  animation-delay: 0;
-  animation-duration: 1s;
+
+/* Demo syles 
+------------------------------------- */
+
+body {
+  background: #000;
+  font-family: "Orbitron", sans-serif;
 }
 
-span:nth-child(2) {
-  top: 0;
-  right: 80px;
-  left: initial;
-  animation-delay: 0.2s;
-  animation-duration: 3s;
+h1 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin: -1.5em -2.5em;
+  width: 5em;
+  color: #011;
+  font-size: 5em;
+  text-align: center;
+  text-shadow: 0 0 3px #6cf;
 }
-
-span:nth-child(3) {
-  top: 80px;
-  right: 0px;
-  left: initial;
-  animation-delay: 0.4s;
-  animation-duration: 2s;
-}
-
-span:nth-child(4) {
-  top: 0;
-  right: 180px;
-  left: initial;
-  animation-delay: 0.6s;
-  animation-duration: 1.5s;
-}
-
-span:nth-child(5) {
-  top: 0;
-  right: 400px;
-  left: initial;
-  animation-delay: 0.8s;
-  animation-duration: 2.5s;
-}
-
-span:nth-child(6) {
-  top: 0;
-  right: 600px;
-  left: initial;
-  animation-delay: 1s;
-  animation-duration: 3s;
-}
-span:nth-child(7) {
-  top: 300px;
-  right: 0px;
-  left: initial;
-  animation-delay: 1s;
-  animation-duration: 1.75s;
-}
-
-span:nth-child(8) {
-  top: 0px;
-  right: 700px;
-  left: initial;
-  animation-delay: 1.4s;
-  animation-duration: 1.25s;
-}
-
-span:nth-child(9) {
-  top: 0px;
-  right: 1000px;
-  left: initial;
-  animation-delay: 0.75s;
-  animation-duration: 2.25s;
-}
-
-span:nth-child(10) {
-  top: 0px;
-  right: 1200px;
-  left: initial;
-  animation-delay: 2.75s;
-  animation-duration: 2.25s;
+h1:first-line {
+  font-size: 200%;
 }
